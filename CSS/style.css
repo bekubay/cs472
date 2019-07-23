@@ -1,0 +1,35 @@
+body{
+      /* resseting before starting styling  */
+      background-color:rgb(82, 86, 89);
+      color: white;
+      margin: 0;
+      padding: 0;
+      font-size: 100%;
+      line-height: 1;
+    }
+a{
+  text-decoration: underline;
+}
+a:active {
+      color: orange;
+      text-decoration: underline;
+    }
+a:link{
+  color: green;
+}
+a:visited{
+  color: pink;
+}
+a:hover{
+  color: blue;
+}
+p::first-letter {
+  color: red;
+}
+ol dt{
+  color: yellow;
+}
+/* ol {
+    display: flex;
+    flex-direction: column-reverse;
+} */
