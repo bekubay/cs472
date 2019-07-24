@@ -1,0 +1,27 @@
+h1, h2, h3{
+  color: #A4A400 ;
+  background-color: #F0F0F0;
+  font-family: "Lucida Sans Unicode", Helvatica,Arial, Sans-serif;
+  text-decoration: underline;
+  font-size: 18pt;
+  text-align: left;
+}
+#heading{
+  text-align: center;
+  font-size: 22pt;
+
+}
+body{
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #404040;
+  background-image: url("../recipeImages/silverware.jpg");
+}
+.user p {
+  background-color: yellow;
+}
+.ing>ul>li{
+  list-style-image: url("../recipeImages/pie_bullet.png");
+}
+.nested{
+  list-style-image: url("../recipeImages/pie_bullet.png");
+}
