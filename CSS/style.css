@@ -10,18 +10,19 @@ body{
 a{
   text-decoration: underline;
 }
+a:link{
+  color: blue;
+}
 a:active {
       color: orange;
       text-decoration: underline;
     }
-a:link{
-  color: green;
-}
+
 a:visited{
   color: pink;
 }
 a:hover{
-  color: blue;
+  color: green;
 }
 p::first-letter {
   color: red;

@@ -25,3 +25,6 @@ body{
 .nested{
   list-style-image: url("../recipeImages/pie_bullet.png");
 }
+.bold{
+  font-weight: bold;
+}

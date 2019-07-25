@@ -5,31 +5,50 @@
 
 		body{
 					/* resseting before starting styling  */
+					background-image: url("images/bg.jpeg");
 					margin: 0;
 					padding: 0;
 					font-size: 100%;
 					line-height: 1;
+					border: 2px solid black;
 				}
 		.me {
-  			max-width: 500px;
+  			max-width: 600px;
   			margin: auto;
 				}
-			a{
-					text-decoration: underline;
+		ul li a{
+					text-decoration: none;
+
 				}
-		a:active {
-				  color: orange;
-					text-decoration: underline;
+		ul li a:link{
+					display: block;
+
+					color: green;
 				}
-		a:link{
+		ul li a:active {
+				  color: aqua;
+				//	text-decoration: underline;
+				}
+
+		ul li a:visited{
 			color: green;
 		}
-		a:visited{
-			color: pink;
+		ul li a:hover{
+			color: red;
 		}
-		a:hover{
-			color: blue;
+		.welcome{
+			color: black;
+			padding: 40px;
+			border: 2px solid green;
+			margin: 50px;
 		}
+	.disp{
+		font-size: 25px;
+	}
+ .disp{
+	 list-style: none;
+ }
+
 		</style>
 
 		<meta charset="utf-8">
@@ -37,14 +56,24 @@
 	</head>
 
 	<body>
+		<div class="welcome">
+			<h3>Welcome Page</h3>
+			<p>Hello every body, thank you for visiting this page. You will get all the informations you need about the autor in this page.
+				Every thing is organized in the link and you can navigate to any of the links by just cliking on them. This website is designed
+				responsive. All informations are intended to be educational and useful. Any comments and suggetions are welcomed. If there is anything
+				that needs to be fixed please let as know.
+					<br>
+				Happy surfing!
+			</p>
+		</div>
+
 		<div class="me">
-		<img src="images/mypic.jpg" alt="Ekubay's Photo" width="200" height="200">
-        <h3>Ekubay Brhane</h3>
-
+				<h3>Ekubay Brhane</h3>
 				<hr>
-
-        <ul>
-          <li>lab0 My first homework</li>
+		<img src="images/mypic.jpg" alt="Ekubay's Photo" width="200" height="200">
+		<hr>
+    <ul class="disp">
+          <li><a href="index.html" >lab0 My first homework</li>
 					<li><a href="html/lab1/aboutme.html" target="_blank">Lab1 About me</a></li>
           <li>  <a href="html/lab2/pie.html" target="_blank">Grandma's pie</a></li>
           <li> <a href="#" >homework2 </a></li>
@@ -53,16 +82,18 @@
 			    <li> <a href="#"> homework5 </a></li>
 				 <li><a href="#">homework6  </a></li>
 					<li> <a href="#">final project </a></li>
-        </ul>
+    </ul>
 
-				<a href="http://validator.w3.org/check/referer">
+				<a href="https://validator.w3.org/check/referer">
 						<img src="http://mumstudents.org/cs472/2014-09/images/w3c-html.png" alt="html validator">
 				</a>
 
-				<a href="http://jigsaw.w3.org/css-validator/check/referer">
+				<a href="https://jigsaw.w3.org/css-validator/check/referer">
 		        <img src="http://mumstudents.org/cs472/2013-09/images/w3c-css.png" alt="css validator">
 		    </a>
-		</div>
+				<hr>
 
+		</div>
+<br>
 	</body>
 </html>
