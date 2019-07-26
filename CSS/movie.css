@@ -25,6 +25,7 @@ h1{
   border-radius: 20px;
   column-gap: 2em;
   overflow: hidden;
+  background-color: #A2B964;
 }
 div .sec2{
   float: right;
@@ -40,6 +41,7 @@ div .sec2{
   column-count: 2;
   column-gap: 2em;
   width: 550px;
+  background-image: url("../movieImages/background.png"); 
 }
 
 .validator{
