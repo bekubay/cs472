@@ -41,12 +41,9 @@ console.log("Expected output of isVowel is True  " + myFunctionTest(true, isVowe
 console.log("Expected output of isVowel is False  " + myFunctionTest(true, isVowel("z")));
 
 
-
+//using map reduce
 function sum(arr){
     var s=0;
-    // for(var i=0; i<arr.length;i++){
-    //     s+= arr[i];
-    // }
     var n = arr.reduce(function(s, elem, i, array){
         return s+=elem;
     });
@@ -55,26 +52,22 @@ function sum(arr){
 
 console.log("Expected output of sum is 20  " + myFunctionTest(20, sum([10,2,4,4])));
 
-
+//using map reduce
 function multiply(arr){
     var product=1;
-    for(var i=0; i<arr.length;i++){
-        product*= arr[i];
-    }
-    return product;
+
+    var m = arr.reduce(function(product, elem, i, array){
+      return product*= elem;
+    })
+    return m;
 }
 
 console.log("Expected output of multiply is 240  " + myFunctionTest(240, multiply([10,4,3,2])));
 
 
 function reverse(str){
-    var reversed = "";
-    for(var i = 0;i<str.length;i++)
-    {
-        reversed += str.charAt(str.length-i-1);
-    }
-    return reversed;
-
+  var r = str.split('').reverse().join('');
+return r;
 }
 
 console.log("Expected output of reverse is esreveR  " + myFunctionTest("esreveR", reverse("Reverse")));
@@ -108,17 +101,10 @@ function testArray(expected, found) {
 
 function filterLongWords(a,x) {
 
-    var b= [];
-    var j=0;
-    for(var i=0; i< a.length; i++) {
-        if(a[i].length > x) {
-            b[j]= a[i];
-            j++;
-        }
-    }
-    return b;
-
-
+  var long =  a.filter(function(elem, i, array){
+    return elem.length > x;
+  });
+  return long;
 }
 
 console.log("Expected output of filterLongWords is 'wonderful'  " + testArray(["really","wonderful"], filterLongWords(["this","is","really","very","wonderful"],4)));
